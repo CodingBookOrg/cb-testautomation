@@ -6,19 +6,18 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 
 public class CBMainPageTest
 {
     @Test
-    public void gotoCodingBook() {
-        System.setProperty("webdriver.chrome.driver", "webdrivers\\chromedriver.exe");
-        WebDriver driver = new ChromeDriver();
-        driver.get("http://www.codingbook.org");
+    public void failing() {
+        assertFalse(true);
     }
 
     @Test
-    public void failing() {
-        assertFalse(true);
+    public void passing() {
+        assertTrue(true);
     }
 }
