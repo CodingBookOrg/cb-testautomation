@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Test Suite">
+    <groups>
+        <define name="smoke"></define>
+        <define name="e2e"></define>
+    </groups>
+    <test name="Basic Test Group">
+        <classes>
+            <class name="org.cb.ta.testng.GroupsTest">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
