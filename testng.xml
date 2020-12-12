@@ -3,10 +3,7 @@
 <suite name="Basic Test Suite">
     <test name="Basic Test Group">
         <classes>
-            <class name="org.cb.ta.testng.CBMainPageTest">
-                <methods>
-                    <exclude name="failing"></exclude>
-                </methods>
+            <class name="org.cb.ta.testng.DependentTest">
             </class>
         </classes>
     </test> <!-- Test -->
