@@ -11,5 +11,6 @@ public class HRTest
 {
     @Test
     public void hr1() {
+        System.out.println("hr1");
     }
 }

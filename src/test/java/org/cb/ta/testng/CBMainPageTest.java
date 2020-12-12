@@ -1,8 +1,6 @@
 package org.cb.ta.testng;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
@@ -10,6 +8,11 @@ import static org.testng.Assert.assertTrue;
 
 public class CBMainPageTest
 {
+    @BeforeClass
+    public void beforeClass() {
+        System.out.println(" *** Before Class");
+    }
+
     @BeforeMethod
     public void beforeMe() {
         System.out.println("Before method");
@@ -33,5 +36,10 @@ public class CBMainPageTest
     @AfterMethod
     public void afterMe() {
         System.out.println("After method");
+    }
+
+    @AfterClass
+    public void afterClass() {
+        System.out.println(" *** After class");
     }
 }
