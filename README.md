@@ -24,3 +24,6 @@ Has features of other framework. Also has:
     - Maven
 
 4. @Test Annotation
+
+5. testng.xml
+    - suite -> test > class/..
