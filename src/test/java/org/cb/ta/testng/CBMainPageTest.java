@@ -1,4 +1,4 @@
-package org.cb.ta;
+package org.cb.ta.testng;
 
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
