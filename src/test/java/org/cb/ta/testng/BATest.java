@@ -1,15 +1,18 @@
 package org.cb.ta.testng;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import static org.testng.Assert.assertFalse;
 
 
 public class BATest
 {
+    @BeforeTest
+    public void beforeTest() {
+        System.out.println(" ### Before Test");
+    }
+
     @BeforeClass
     public void beforeClass() {
         System.out.println(" *** Before Class");
@@ -19,4 +22,10 @@ public class BATest
     public void BA1() {
         System.out.println("b1");
     }
+
+    @AfterTest
+    public void afterTest() {
+        System.out.println(" ### After Test");
+    }
+
 }
