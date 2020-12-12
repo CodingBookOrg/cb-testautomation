@@ -1,6 +1,5 @@
 # TESTNG (Test Next Generation)
 1. Official Web Page of TestNG
-   
 2. 
 **What is a test framework?** <br>
 
@@ -12,11 +11,13 @@ Common features:
 - monitor
    - logs
    - reports
-- 
+- data source (excel, database)
 
 **Why TestNG?**
     
-    
+Has features of other framework. Also has:
+- hierarchy
+- parallel test execution
    
 3. Using
     - IntelliJ IDEA
