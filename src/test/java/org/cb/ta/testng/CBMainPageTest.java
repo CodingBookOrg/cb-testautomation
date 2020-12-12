@@ -20,4 +20,9 @@ public class CBMainPageTest
     public void passing() {
         assertTrue(true);
     }
+
+    @Test
+    public void passing2() {
+        assertTrue(true);
+    }
 }
