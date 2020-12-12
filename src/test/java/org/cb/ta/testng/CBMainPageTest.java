@@ -1,16 +1,24 @@
 package org.cb.ta.testng;
 
-import org.junit.Assert;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertFalse;
-import static org.testng.Assert.assertTrue;
 
 
 public class CBMainPageTest
 {
+    @BeforeMethod
+    public void beforeMe() {
+        System.out.println("Before method");
+    }
+
+    @AfterMethod
+    public void afterMe() {
+        System.out.println("After method");
+    }
+
     @Test
     public void failing() {
         assertFalse(true);
@@ -18,11 +26,11 @@ public class CBMainPageTest
 
     @Test
     public void passing() {
-        assertTrue(true);
+        System.out.println("passing");
     }
 
     @Test
     public void passing2() {
-        assertTrue(true);
+        System.out.println("passing2");
     }
 }
