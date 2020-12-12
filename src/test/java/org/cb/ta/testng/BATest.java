@@ -1,13 +1,15 @@
 package org.cb.ta.testng;
 
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 
 public class BATest
 {
+    @BeforeSuite
+    public void beforeSuite() {
+        System.out.println(" !!! Before Suite");
+    }
+
     @BeforeTest
     public void beforeTest() {
         System.out.println(" ### Before Test");
@@ -28,4 +30,8 @@ public class BATest
         System.out.println(" ### After Test");
     }
 
+    @AfterSuite
+    public void afterSuite() {
+        System.out.println(" !!! After Suite");
+    }
 }
