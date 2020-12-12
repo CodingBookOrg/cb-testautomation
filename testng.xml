@@ -3,7 +3,7 @@
 <suite name="Basic Test Suite">
     <test name="Basic Test Group">
         <classes>
-            <class name="org.cb.ta.testng.DependentTest">
+            <class name="org.cb.ta.testng.TimeOutTest">
             </class>
         </classes>
     </test> <!-- Test -->
