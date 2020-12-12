@@ -5,6 +5,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
 
 public class CBMainPageTest
@@ -12,11 +13,6 @@ public class CBMainPageTest
     @BeforeMethod
     public void beforeMe() {
         System.out.println("Before method");
-    }
-
-    @AfterMethod
-    public void afterMe() {
-        System.out.println("After method");
     }
 
     @Test
@@ -32,5 +28,10 @@ public class CBMainPageTest
     @Test
     public void passing2() {
         System.out.println("passing2");
+    }
+
+    @AfterMethod
+    public void afterMe() {
+        System.out.println("After method");
     }
 }
