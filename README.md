@@ -68,6 +68,7 @@ b) Use groups variable `@Test(groups={"Smoke", "Regression"})`
     @Optional annotation for optional values.
 21. TestNG Listeners
 22. Parallel execution
+23. Ordering by priority
 
 
 ## NOTES
