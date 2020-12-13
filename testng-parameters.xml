@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Test Suite">
+<!--    suite level parameter (global to all tests) -->
+    <parameter name="url" value="www.google.com"></parameter>
+<!--    Optinal -->
+    <parameter name="urlTitle" value="Google Search"></parameter>
+    <test name="Basic Test Group">
+        <parameter name="organization" value="CodingBook"></parameter>
+<!--        Overrides the global one -->
+        <parameter name="url" value="www.codingbook.org"></parameter>
+        <classes>
+            <class name="org.cb.ta.testng.ParametersTest">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
