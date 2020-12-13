@@ -17,17 +17,17 @@ public class CBMainPageTest
         System.out.println("Before method");
     }
 
-    @Test
+    @Test(priority = 2)
     public void failing() {
         assertFalse(true);
     }
 
-    @Test
+    @Test(priority = 1)
     public void passing() {
         System.out.println("passing");
     }
 
-    @Test
+    @Test(priority = 3)
     public void passing2() {
         System.out.println("passing2");
     }
