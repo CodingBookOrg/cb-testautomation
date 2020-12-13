@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Test Suite" parallel="tests">
+    <test name="Basic Test Group">
+        <classes>
+            <class name="org.cb.ta.testng.ParallelTest">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Basic Test Group 2">
+        <classes>
+            <class name="org.cb.ta.testng.ParallelTest">
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->

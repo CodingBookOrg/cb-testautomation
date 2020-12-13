@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Basic Test Suite">
+    <test name="HR">
+        <classes>
+            <class name="org.cb.ta.testng.HRTest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Business Analysis">
+        <classes>
+            <class name="org.cb.ta.testng.BATest"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="IT">
+        <classes>
+            <class name="org.cb.ta.testng.ITTest"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
