@@ -4,6 +4,7 @@
     <groups>
         <define name="smoke"></define>
         <define name="e2e"></define>
+        <run><include name="smoke"/></run>
     </groups>
     <test name="Basic Test Group">
         <classes>
