@@ -73,12 +73,12 @@ b) Use groups variable `@Test(groups={"Smoke", "Regression"})`
 
 ## NOTES
 - If you do not define an order, test cases are ordered alphabetically
-  (you can use @dependsOnX or @Test(priority = "1"))
+  (you can use @Test(dependsOnX ='') or @Test(priority = "1"))
 - Access modifier for each test method should be `public`, 
   otherwise it will not be run
 - Parameter order for TestNG and Junit are different. 
   So moving form one framework to another might cause headaches.
-  Because of that, TestNG has org.testng.AssetJUnit package.
+  Because of that, TestNG has org.testng.AssertJUnit class.
   By using this, you can easily change from TestNG to JUnit or vice versa
 - @BeforeX and @AfterX annotations are called **Configuration** annotations.
   All @Test methods are dependent on these methods
